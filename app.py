@@ -1,10 +1,6 @@
 import feedparser
 from flask import Flask, render_template, jsonify, request
 import processor
-# from twitter import *
-import os
-import time
-import json
 
 app = Flask(__name__, template_folder='templates')
 
