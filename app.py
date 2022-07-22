@@ -7,6 +7,7 @@ app = Flask(__name__, template_folder='templates')
 app.config['SECRET_KEY'] = 'enter-a-very-secretive-key-3479373'
 
 FEED_URL = 'https://avatar-the-last-airbender.tumblr.com/rss'
+font_url='https://fonts.googleapis.com/css2?family=Questrial&display=swap'
 
 @app.route('/', methods=["GET", "POST"])
 def index():
@@ -15,6 +16,10 @@ def index():
 @app.route('/ozai', methods=["GET", "POST"])
 def ozaiindex():
     return render_template('ozai.html', **locals())
+
+@app.route('/aang', methods=["GET", "POST"])
+def aangindex():
+    return render_template('aang.html', **locals())  
 
 @app.route('/zuko', methods=["GET", "POST"])
 def zukoindex(): 
@@ -30,11 +35,11 @@ def zukoindex():
     #     <p>{1}</p><br/>
     #     </body>
     #     """.format(article.get("title"), article.get("description"))
-    return render_template('zuko.html', info=info)
+    return render_template('zuko.html', info=info, font_url=font_url)
 
 @app.route('/iroh', methods=["GET", "POST"])
 def irohindex():
-    return render_template('iroh.html', **locals())
+    return render_template('iroh.html', font_url=font_url)
 
 
 @app.route('/chatbot', methods=["GET", "POST"])

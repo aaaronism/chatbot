@@ -4,10 +4,12 @@ html {
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100vw 105vh;
+    font-family: 'Questrial', sans-serif;
 }
 
 #irohtea {
     position: fixed;
+    z-index: 2;
     bottom: 0;
     right: -35%;
     background-image: url("irohtea.png");
@@ -21,7 +23,9 @@ html {
 
 .container {
     position: fixed;
-    overflow: auto;
+    z-index: 3;
+    overflow-y: scroll;
+    overflow-x: hidden;
     left: 15%;
     bottom: 20%;
     width: 650px;
@@ -31,14 +35,40 @@ html {
     border: 3px solid black;
 }
 
+.container h1 {
+    text-align: center;
+    position: sticky;
+    top: 1%;
+    margin: 0;
+    padding: 5px 0 50px 0;
+    height: 1px;
+    font-size: 45px;
+}
+
+.conthead {
+    background-color: rgb(255, 238, 202);
+    position: fixed;
+    width: 661px;
+    margin: -32px -32px;
+    padding: 15px;
+    border: 2px solid black
+}
+
+.col {
+    padding: 10px 0;
+    font-size: 20px
+}
+
 #inputpart {
     position: fixed;
     left: 15%;
     bottom: 10%;
-    background-color: rgba(255, 255, 255);
+    /* background-color: rgba(255, 255, 255, 0.5); */
     width: 650px;
+    height: 42px;
     padding: 10px 30px;
-    border: 3px solid black;
+    /* border: 3px solid black; */
+    text-align: left;
 }
 
 .flame {
@@ -54,7 +84,7 @@ html {
 
 #home {
     position: fixed;
-    z-index: 1;
+    z-index: 4;
     background-image: url("home-button.png");
     background-repeat: no-repeat;
     background-size: 75px 75px;
@@ -68,4 +98,84 @@ html {
 
 #home:hover {
     filter: drop-shadow(1px 1px 10px white);
+}
+
+.inputrow {
+    text-align: right;
+}
+
+#submit {
+    position: absolute;
+    height: 53px;
+    width: 100px;
+    background-color: lightskyblue;
+    border: 3px solid black;
+    margin: -53px 0 0 -64px;
+    font-size: 25px;
+}
+
+#question {
+    width: 580px;
+    height: 35px;
+    padding: 6px 10px;
+    margin: -4px 0 0 -28px;
+    border: 3px solid black;
+    font-size: 20px;
+}
+
+.light {
+    background-image: url("/static/lightpart.png");
+    background-repeat: repeat-x;
+    background-size: auto 400%;
+    opacity: 0.2;
+    width: 100%;
+    height: 400px;
+    position: fixed;
+    z-index: 1;
+    right: 0px;
+    bottom: 0;
+    animation: slide 500s linear infinite;
+}
+
+.light2 {
+    background-image: url("/static/lightpart.png");
+    background-repeat: repeat-x;
+    background-size: auto 250%;
+    opacity: 0.5;
+    width: 100%;
+    height: 400px;
+    position: fixed;
+    z-index: 2;
+    right: 0px;
+    bottom: 0;
+    animation: slide 700s linear infinite;
+    animation-direction: reverse;
+}
+
+::-webkit-scrollbar {
+    width: 18.5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff3d;
+    border: 2px solid black;
+    border-top-style: none;
+    border-bottom-style: none;
+    /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.619);
+    /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@keyframes slide {
+    100% {
+        background-position:
+        5000px 0;
+    }
 }
