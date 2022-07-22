@@ -16,7 +16,6 @@ grpcio==1.47.0
 gunicorn==20.0.4
 h5py==3.7.0
 idna==3.3
-itsdangerous==2.1.2
 Jinja2==3.1.2
 joblib==1.1.0
 keras==2.9.0
@@ -37,7 +36,6 @@ python-dateutil==2.8.2
 python-mimeparse==1.6.0
 regex==2022.7.9
 rsa==4.8
-six==1.16.0
 tensorboard==2.9.1
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
@@ -45,7 +43,5 @@ tensorflow==2.9.1
 tensorflow-estimator==2.9.0
 tensorflow-io-gcs-filesystem==0.26.0
 tqdm==4.64.0
-typing_extensions==4.3.0
-urllib3==1.26.10
 Werkzeug==2.1.2
 wrapt==1.14.1
