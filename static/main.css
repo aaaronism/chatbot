@@ -1,0 +1,128 @@
+html {
+    background-color: black;
+    background-image: url("palace.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw 100vh;
+}
+
+body {
+    margin: 0
+}
+
+.title {
+    position: fixed;
+    color: red;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.portrait {
+    display: grid;
+    height: 100vh;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: -20px 0 0 0;
+}
+
+#ozai {
+    opacity: 0.9;
+    grid-column-start: 1;
+    background-image: url("ozai.PNG");
+    background-repeat: no-repeat;
+    background-size: 270px 400px;
+    background-position: center;
+    width: 270px;
+    height: 400px;
+    border: 10px solid rgb(198, 151, 31);
+    box-shadow:
+    0 0 0 10px rgb(163, 124, 25);
+}
+
+#ozai:hover {
+    box-shadow: 1px 1px 50px 10px inset white,
+    0 0 0 10px rgb(163, 124, 25);
+}
+
+#zuko {
+    opacity: 0.92;
+    grid-column-start: 2;
+    background-image: url("zuko.JPG");
+    background-repeat: no-repeat;
+    background-size: 300px 435px;
+    background-position: center;
+    width: 270px;
+    height: 400px;
+    border: 10px solid rgb(198, 151, 31);
+    box-shadow:
+    0 0 0 10px rgb(163, 124, 25);
+}
+
+#zuko:hover {
+    box-shadow: 1px 1px 50px 10px inset white,
+    0 0 0 10px rgb(163, 124, 25);
+}
+
+#iroh {
+    opacity: 0.9;
+    grid-column-start: 3;
+    background-image: url("iroh.PNG");
+    background-repeat: no-repeat;
+    background-size: 275px 400px;
+    background-position: center;
+    width: 270px;
+    height: 400px;
+    border: 10px solid rgb(198, 151, 31);
+    box-shadow:
+    0 0 0 10px rgb(163, 124, 25);
+}
+
+#iroh:hover {
+    box-shadow: 1px 1px 50px 10px inset white,
+    0 0 0 10px rgb(163, 124, 25);
+}
+
+.fire {
+    position: fixed;
+    background-image: url("flame.gif");
+    background-repeat: no-repeat;
+    background-size: 500px 250px;
+    width: 5000px;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+}
+
+.fire2 {
+    position: fixed;
+    background-image: url("flame.gif");
+    background-repeat: no-repeat;
+    background-size: 500px 250px;
+    width: 5000px;
+    height: 200px;
+    bottom: 0;
+    left: 30%;
+}
+
+.fire3 {
+    position: fixed;
+    background-image: url("flame.gif");
+    background-repeat: no-repeat;
+    background-size: 500px 250px;
+    width: 5000px;
+    height: 200px;
+    bottom: 0;
+    left: 60%;
+}
+
+.fire4 {
+    position: fixed;
+    background-image: url("flame.gif");
+    background-repeat: no-repeat;
+    background-size: 500px 250px;
+    width: 5000px;
+    height: 200px;
+    bottom: 0;
+    left: 90%;
+}

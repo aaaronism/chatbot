@@ -1,0 +1,65 @@
+html {
+    background-color: black;
+    background-image: url("zukobg.jpg");
+    background-repeat: no-repeat;
+    /* background-position: 50% -50px; */
+    background-size: 100vw 100vh;
+}
+
+#lordzuko {
+    position: fixed;
+    z-index: 2;
+    background-image: url("lordzuko.png");
+    background-repeat: no-repeat;
+    background-size: 60vh;
+    width: 500px;
+    height: 900px;
+    filter: drop-shadow(1px 1px 40px black);
+}
+
+#feed {
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 80%;
+    background-color: rgba(255, 213, 135, 0.6);
+    padding: 30px;
+    border: 3px solid black;
+}
+
+#feed h1 {
+    text-align: center;
+    position: sticky;
+    top: 1%;
+    margin: 0;
+    padding: 0 0 50px 0;
+}
+
+#home {
+    position: fixed;
+    z-index: 1;
+    background-image: url("home-button.png");
+    background-repeat: no-repeat;
+    background-size: 75px 75px;
+    width: 75px;
+    height: 75px;
+    top: 10%;
+    right: 11.5%;
+    filter: drop-shadow(1px 1px 40px black);
+    opacity: 0.9;
+}
+
+#home:hover {
+    filter: drop-shadow(1px 1px 10px white);
+}
+
+#post {
+    zoom: 0.75;
+    padding: 50px 5px;
+    border: 5px solid rgba(0, 0, 0, 0.298);
+    background-color: rgba(255, 255, 255, 0.221);
+}
