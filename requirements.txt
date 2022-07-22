@@ -29,14 +29,11 @@ MarkupSafe==2.1.1
 mimerender==0.6.0
 nltk==3.7
 numpy==1.23.1
-oauth==1.0.1
-oauthlib==3.2.0
 opt-einsum==3.3.0
 packaging==21.3
 protobuf==3.19.4
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-pygame==2.1.2
 pyparsing==3.0.9
 python-dateutil==2.8.2
 python-mimeparse==1.6.0
@@ -55,8 +52,6 @@ tensorflow-estimator==2.9.0
 tensorflow-io-gcs-filesystem==0.26.0
 termcolor==1.1.0
 tqdm==4.64.0
-tweepy==4.10.0
-twitter==1.19.3
 typing_extensions==4.3.0
 urllib3==1.26.10
 Werkzeug==2.1.2
