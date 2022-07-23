@@ -35,28 +35,22 @@ html {
     border: 3px solid black;
 }
 
+.container:not(.conthead) {
+    display: flex;
+    flex-direction: column-reverse
+}
+
 .container h1 {
-    text-align: center;
-    position: sticky;
-    top: 1%;
-    margin: 0;
-    padding: 5px 0 50px 0;
-    height: 1px;
+    /* text-align: right; */
+    position: fixed;
+    right: 43%;
+    bottom: 18%;
     font-size: 45px;
 }
 
-.conthead {
-    background-color: rgb(255, 238, 202);
-    position: fixed;
-    width: 661px;
-    margin: -32px -32px;
-    padding: 15px;
-    border: 2px solid black
-}
-
 .col {
-    padding: 10px 0;
-    font-size: 20px
+    margin: 0 0 -51px 0;
+    font-size: 20px;
 }
 
 #inputpart {
@@ -97,7 +91,7 @@ html {
 }
 
 #home:hover {
-    filter: drop-shadow(1px 1px 10px white);
+    animation: fadeIn 0.5s ease-out forwards;
 }
 
 .inputrow {
@@ -179,3 +173,8 @@ html {
         5000px 0;
     }
 }
+
+@keyframes fadeIn {
+    0% { filter: drop-shadow(1px 1px 10px rgb(255, 255, 255, 0)); }
+    100% { filter: drop-shadow(1px 1px 10px rgb(255, 255, 255)); }
+  }

@@ -10,12 +10,16 @@ FEED_URL = 'https://avatar-the-last-airbender.tumblr.com/rss'
 font_url='https://fonts.googleapis.com/css2?family=Questrial&display=swap'
 
 @app.route('/', methods=["GET", "POST"])
+def welcome():
+    return render_template('welcome.html', font_url=font_url)
+
+@app.route('/palace', methods=["GET", "POST"])
 def index():
-    return render_template('index.html')
+    return render_template('index.html', font_url=font_url)
 
 @app.route('/ozai', methods=["GET", "POST"])
 def ozaiindex():
-    return render_template('ozai.html', **locals())
+    return render_template('ozai.html', font_url=font_url)
 
 @app.route('/aang', methods=["GET", "POST"])
 def aangindex():

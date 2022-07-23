@@ -11,14 +11,15 @@
 <body>
     <div id="lordzuko"></div>
     <div id="feed">
-        <div id="feedhead"></div>
-        <h1>Fire Nation Citizen Bulletin Board</h1>
+        <div id="feedhead">
+            <h1>Fire Nation Citizen Bulletin Board</h1>
+        </div>
                 {% for i in range(10) %}
                 <div id="post">
                     {{ info[i].description|safe }}
                 </div>
                 {% endfor %}
     </div>
-    <a id="home" href="/"></a>
+    <a id="home" href="/palace"></a>
 </body>
 </html>

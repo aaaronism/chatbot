@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{{ font_url }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='ozai.css')}}">
 </head>
 <body>
     <div id="lordozai"></div>
     <div id="board">
-        <canvas id="game" width="500" height="500" >
+        <h1>Ozai's Airbender Genocide Quest</h1>
+        <canvas id="game" width="470" height="470" >
     </div>
-    <a id="home" href="/"></a>
+    <a id="home" href="/palace"></a>
     <!-- <img src="/static/aang.png" id="aang" width="50" height="50"> -->
     <script src="{{ url_for('static', filename='ozai.js')}}"></script>
 </body>

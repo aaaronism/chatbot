@@ -74,7 +74,7 @@ function isGameOver() {
         gameOver = true;
     }
     //  right wall
-    else if (headX === tileCount + 5) {
+    else if (headX === tileCount + 4) {
         gameOver = true;
     }
     // top wall
@@ -82,7 +82,7 @@ function isGameOver() {
         gameOver = true;
     }
     // bottom wall
-    else if (headY === tileCount + 5) {
+    else if (headY === tileCount + 4) {
         gameOver = true;
     }
 
@@ -109,8 +109,8 @@ function isGameOver() {
 
 function drawpoints() {
 snakegame.fillStyle = "white"
-snakegame.font = "25px verdena"
-snakegame.fillText("Points: " + points, canvas.clientWidth-100, 35)
+snakegame.font = "25px Questrial"
+snakegame.fillText("Points: " + points, canvas.clientWidth-110, 35)
 }
 
 function clearScreen() {
@@ -120,7 +120,7 @@ snakegame.fillRect(0, 0, canvas.clientWidth, canvas.clientHeight)
 
 function drawSnake() {
     
-    snakegame.fillStyle = "green";
+    snakegame.fillStyle = "darkred";
     for (let i = 0; i < snakeParts.length; i++) {
         let part = snakeParts[i]
          snakegame.fillRect(part.x * tileCount, part.y * tileCount, tileSize, tileSize)
@@ -144,7 +144,7 @@ function drawApple() {
      img.src = 'static/aang.png' 
     //  img.onload = function() {
         var pattern = snakegame.createPattern(img, "no-repeat")
-        snakegame.fillStyle = pattern
+        snakegame.fillStyle = "lightblue"
         snakegame.fill()
     //  }
     //  snakegame.drawImage(img, 10, 10, 30, 30)

@@ -4,6 +4,7 @@ html {
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100vw 100vh;
+    font-family: 'Questrial', sans-serif;
 }
 
 #lordozai {
@@ -28,6 +29,12 @@ html {
     background-color: rgba(255, 213, 135, 0.6);
     padding: 30px;
     border: 3px solid black;
+}
+
+#board h1 {
+    text-align: center;
+    margin: -5px 0 0 0;
+    font-size: 40px;
 }
 
 .flame {
@@ -56,12 +63,17 @@ html {
 }
 
 #home:hover {
-    filter: drop-shadow(1px 1px 10px white);
+    animation: fadeIn 0.5s ease-out forwards;
 }
 
 #game {
     position: fixed;
     left: 50%;
-    top: 50%;
+    top: 55%;
     transform: translate(-50%, -50%);
 }
+
+@keyframes fadeIn {
+    0% { filter: drop-shadow(1px 1px 10px rgb(255, 255, 255, 0)); }
+    100% { filter: drop-shadow(1px 1px 10px rgb(255, 255, 255)); }
+  }
