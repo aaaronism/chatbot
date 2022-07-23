@@ -49,6 +49,12 @@ html {
     text-align: center;
 }
 
+#enter:hover {
+    /* box-shadow: 1px 1px 50px 5px rgb(165, 0, 0); */
+    animation: 1s fadeIn forwards;
+    opacity: 1;
+}
+
 #enter h2 {
     font-size: 18px;
     margin: 0;
@@ -56,10 +62,8 @@ html {
 }
 
 @keyframes fadeIn {
-    0% { box-shadow: 1px 1px 50px 10px inset rgb(255, 255, 255, 0),
-        0 0 0 10px rgb(163, 124, 25); }
-    100% { box-shadow: 1px 1px 50px 10px inset rgb(255, 255, 255),
-        0 0 0 10px rgb(163, 124, 25); }
+    0% { box-shadow: 1px 1px 50px 5px rgb(165, 0, 0, 0); }
+    100% { box-shadow: 1px 1px 50px 5px rgb(165, 0, 0); }
   }
 
 @keyframes fadeInHead {
@@ -83,3 +87,4 @@ html {
     0% { opacity: 1 }
     100% { opacity: 0; }
 }
+
